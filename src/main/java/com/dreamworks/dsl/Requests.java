@@ -17,8 +17,8 @@ public class Requests {
         return new FindRequest().from(entity);
     }
 
-    public static CreateInsert in(final String entity) {
-        return new CreateRequest().in(entity);
+    public static In in(final String entity) {
+        return new InDelegate(entity);
     }
 
 }

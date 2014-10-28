@@ -27,6 +27,8 @@ public class Main {
             )
         ).select("id", "code").build();
 
+        Statement update = in("entity").withId(1).update("", "").build();
+        
         System.out.println(find);
     }
 }
